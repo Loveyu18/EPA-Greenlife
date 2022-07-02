@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>@全民綠生活資訊平台</title>
+    </head>
+
+
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img class="logo" src="./imgs/logo.webp" alt="logo" /></a>
+                <ul>
+                    <li><a href="#">關於綠生活</a></li>
+                    <li><a href="#">活動專區</a></li>
+                    <li><a href="#">綠生活選擇</a></li>
+                    <li><a href="#">知識綠</a></li>
+                    <li><a href="#">標章及採購</a></li>
+                    <li><a href="#">下載專區</a></li>
+                </ul>
+            </header>
+
+            <div class="content">
+                <div class="textBox">
+                    <h2>全民綠生活 <span>START</span><br>我準備好了，那你呢</h2>
+                    <p>「淨零綠生活」是臺灣2050淨零轉型12項關鍵戰略之一，臺灣淨零轉型需從推動「淨零綠生活」開始，包括全民食、衣、住、行、育、樂、購的行為及消費模式改變，進而促使產業供給端的改變，降低溫室氣體排放。環保署自109年起為提升綠生活理念並養成民眾綠生活行為與習慣，積極推動「全民綠生活」運動，並以「全民綠生活資訊平台」，向全民推廣如何一起響應、力行綠生活。「愛地球不只是一種生活風格，也是一項很潮的生活態度」，「<span>綠生活</span>」是一種友善環境的生活方式，從食、衣、住、行、育、樂、購等生活小細節，結合全國機關、學校、企業、民間團體、社區及民眾一同動起來，改變小小的生活習慣，創造大大的綠生活未來。
+                    </p>
+                    <a href="#">進入首頁</a>
+                </div>
+                <div class="imgBox">
+                    <img class="bigLogo" src="./imgs/img1.png" alt="" />
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="./imgs/thumb1.png" alt=""
+                        onclick="imgSlider('./imgs/img1.png');changeCircleColor('#5a81d5')">
+                </li>
+                <li><img src="./imgs/thumb2.png" alt=""
+                        onclick="imgSlider('./imgs/img2.png');changeCircleColor('#929292')">
+                </li>
+                <li><img src="./imgs/thumb3.png" alt=""
+                        onclick="imgSlider('./imgs/img3.png');changeCircleColor('#4acf8a')">
+                </li>
+                <li><img src="./imgs/thumb4.png" alt=""
+                        onclick="imgSlider('./imgs/img4.png');changeCircleColor('#fea14f')">
+                </li>
+                <li><img src="./imgs/thumb5.png" alt=""
+                        onclick="imgSlider('./imgs/img5.png');changeCircleColor('#37836b')">
+                </li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </section>
+
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.bigLogo').src = anything;
+            }
+            function changeCircleColor(color) {
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+
+
+        </script>
+
+    </body>
+
+</html>
